@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>My Profile</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+		<link rel="stylesheet" href="./Common.css">
+		<style>
+			body,
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6 {
+				font-family: "Montserrat", sans-serif
+			}
+
+			.w3-row-padding img {
+				margin-bottom: 12px
+			}
+
+			.w3-sidebar {
+				width: 120px;
+				background: #222;
+			}
+
+			#main {
+				margin-left: 120px
+			}
+
+			@media only screen and (max-width: 600px) {
+				#main {
+					margin-left: 0
+				}
+			}
+		</style>
+	</head>
+	<body class="w3-black">
+		<!-- Icon Bar (Sidebar - hidden on small screens) -->
+		<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+			<!-- Avatar image in top left corner -->
+			<img src="./profilepic.jpg" style="width:100%">
+			<a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+				<i class="fa fa-home w3-xxlarge" style="color:green"></i>
+				<p style="color:green"><b>HOME</b></p>
+			</a>
+			<a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+				<i class="fa fa-user w3-xxlarge" style="color:green"></i>
+				<p style="color:green"><b>ABOUT</b></p>
+			</a>
+			<a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+				<i class="fa fa-desktop w3-xxlarge" style="color:green"></i>
+				<p style="color:green"><b>PROJECTS</b></p>
+			</a>
+			<a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+				<i class="fa fa-envelope w3-xxlarge" style="color:green"></i>
+				<p style="color:green"><b>CONTACT</b></p>
+			</a>
+		</nav>
+		<!-- Navbar on small screens (Hidden on medium and large screens) -->
+		<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+			<div class="w3-bar w3-opacity w3-hover-opacity-off w3-center w3-small" style="background-color:green; opacity:50%">
+				<a href="#" class="w3-bar-item w3-button" style="width:25% !important; color:black"><b>HOME</b></a>
+				<a href="#about" class="w3-bar-item w3-button" style="width:25% !important; color:black"><b>ABOUT</b></a>
+				<a href="#projects" class="w3-bar-item w3-button" style="width:25% !important; color:black"><b>PROJECTS</b></a>
+				<a href="#contact" class="w3-bar-item w3-button" style="width:25% !important; color:black"><b>CONTACT</b></a>
+			</div>
+		</div>
+		<!-- Page Content -->
+		<div class="w3-padding-large" id="main">
+			<!-- Header/Home -->
+			<header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+				<h1 class="w3-jumbo"><span class="w3-hide-small">I'm </span><span class="w3-tag w3-round" style="background-color:green">Timir <b>PATEL</b></span></h1>
+				<p>
+				<h3 style="color:green"><b>Software Engineer</b></h3>
+				</p>
+				<img src="./profilepic.jpg" alt="boy" class="w3-image" width="992" height="1108">
+			</header>
+			<!-- About Section -->
+			<div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+				<h2 style="color:white">Timir <b>PATEL</b></h2>
+				<hr style="width:200px" class="w3-opacity">
+				<p style="color:green"> A self-driven and motivated enthusiast wanting to be always one step better than myself, this is what makes me stand out from a group of engineers in my field.
+					I have been the leader of 2 teams of future engineers in our university offered course Engineering Clinics having made a fire extinguishing and obstacle avoiding robot using arduino as one project and a voice controlled industry automation model using raspberry pi as another project. Enhancing my skills as a leader and a team player and acquiring new ones such as critical thinking, time and finance management skills.
+					All of which I am confident will help me while working as an intern and given the opportunities will help me propel my career ahead. 
+				</p>
+				<h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
+				<p class="w3-wide">Web Design</p>
+				<div style="background-color:white">
+					<div style="height:28px; width:80%; background-color:green"></div>
+				</div>
+				<p class="w3-wide">Backend Database Connectivity</p>
+				<div style="background-color:white">
+					<div style="height:28px; width:65%; background-color:green"></div>
+				</div>
+				<p class="w3-wide">Android App Development</p>
+				<div style="background-color:white">
+					<div style="height:28px; width:50%; background-color:green"></div>
+				</div>
+				<br><br><br>
+				<button class="w3-button w3-padding-large w3-section" style="color:green">
+				<i class="fa fa-user"></i> 
+				<a href="./Resume.html" target="_blank"><b> My Resume </b></a>
+				</button>
+				<br>
+				<button class="w3-button w3-padding-large w3-section" style="color:green">
+				<i class="fa fa-user"></i> 
+				<a href="./Timir-Patel-Resume.pdf" download ><b> Download My Resume </b></a>
+				</button>
+			</div>
+			<!-- Portfolio Section -->
+			<div class="w3-padding-64 w3-content" id="projects">
+				<h2 class="w3-text-light-grey">My Projects</h2>
+				<hr style="width:200px" class="w3-opacity">
+				<!-- Grid for photos -->
+				<div class="w3-row-padding" style="margin:0 -16px">
+					<div class="w3-half">
+						<button class="w3-button w3-padding-large w3-section" style="color:black; background-color:green">
+						<i class="fa fa-user"></i> 
+						<a href="./EC Report Sem 1.pdf" download ><b> Obsracle Avoiding Fire Alarm Car </b></a>
+						</button>
+						<br><br>
+						<button class="w3-button w3-padding-large w3-section" style="color:black; background-color:green">
+						<i class="fa fa-user"></i> 
+						<a href="./EC Report Sem 2.pdf" download ><b> IOT base Industry Automation </b></a>
+						</button>
+						<br><br>
+					</div>
+					<div class="w3-half">
+						<button class="w3-button w3-padding-large w3-section" style="color:black; background-color:green">
+						<i class="fa fa-user"></i> 
+						<a href="./EC Report Sem 3.pdf" download ><b> Obsracle Avoiding Fire Extinguisher </b></a>
+						</button>
+						<br><br>
+						<button class="w3-button w3-padding-large w3-section" style="color:black; background-color:green">
+						<i class="fa fa-user"></i> 
+						<a href="./EC Report Sem 4.pdf" download ><b> Smart Pup </b></a>
+						</button>
+						<br><br>
+					</div>
+					<!-- End photo grid -->
+				</div>
+				<!-- End Portfolio Section -->
+			</div>
+			<!-- Contact Section -->
+			<div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+				<h2 class="w3-text-light-grey">Contact Me</h2>
+				<hr style="width:200px" class="w3-opacity">
+				<div class="w3-section">
+					<p style="color:green">
+						<i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right" style="color:green"></i> 
+						Vadodara, Gujarat, India
+					</p>
+					<p style="color:green">
+						<i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right" style="color:green"></i> 
+						Phone: +91 9925222xxx
+					</p>
+					<p style="color:green">
+						<i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right" style="color:green"></i> 
+						Email: timir.pxx@gmail.com
+					</p>
+				</div>
+				<br>
+				<p style="color:green">Lets get in touch. Send me a message:</p>
+				<form id="myForm">
+					<p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required></p>
+					<p><input class="w3-input w3-padding-16" type="Email" placeholder="Email" required></p>
+					<p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required></p>
+					<p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required></p>
+					<p>
+						<button class="w3-button w3-padding-large" type="submit" style="color:black; background-color:green">
+						<i class="fa fa-paper-plane"></i> 
+						SEND MESSAGE
+						</button>
+					</p>
+				</form>
+				<!-- End Contact Section -->
+			</div>
+			<!-- Footer -->
+			<footer class="w3-center w3-padding-64 w3-text-grey w3-xlarge">
+				<a href="https://codepen.io/timir-patel" target = "_blank" >
+					<img alt="Codepen.io" src="./Codepen.png" width="50" height="50" style="border-radius: 50%"/>
+				</a>
+				<a href="https://www.facebook.com/timirp1" target = "_blank" >
+					<img alt="Facebook" src="./facebook.png" width="50" height="50" style="border-radius: 50%"/>
+				</a>
+				<a href="https://github.com/tp1999/Projects" target = "_blank" >
+					<img alt="Github" src="./github.jpg" width="50" height="50" background-color="white" style="border-radius: 50%"/>
+				</a>
+				<a href="https://www.linkedin.com/in/timir-patel/" target = "_blank" >
+					<img alt="Linkedin" src="./linkedin.jfif" width="50" height="50" style="border-radius: 50%"/>
+				</a>
+				<a href="https://www.instagram.com/timir_p_99/?hl=en" target = "_blank" >
+					<img alt="Instagram" src="./instagram.png" width="50" height="50" style="border-radius: 50%"/>
+				</a>
+				<a href="https://twitter.com/TimirPatel13" target = "_blank" >
+					<img alt="Twitter" src="./twitter.png" width="50" height="50" style="border-radius: 50%"/>
+				</a>
+			</footer>
+			<!-- End footer -->
+			<!-- END PAGE CONTENT -->
+		</div>
+	</body>
+</html>
